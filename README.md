@@ -1,5 +1,6 @@
 # todolist-python-angular
 
+The full swagger api documentation is located in /doc/documentation.yml
 
 # Frontend
 Under development
