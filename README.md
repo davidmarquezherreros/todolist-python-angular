@@ -6,7 +6,7 @@ The full swagger api documentation is located in /doc/documentation.yml
 Under development
 
 # Back end
-PYTHON 3
+My first program and API in python
   ## Constant service
   
   ## Database service
