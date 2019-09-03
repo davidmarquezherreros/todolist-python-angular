@@ -1,0 +1,35 @@
+<div class="container">
+    <br>
+    <h2>List of all tasks</h2>
+    <br>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Status</td>
+                <td>Start date</td>
+                <td>End date</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td>{{task.id}}</td>
+                <td>{{task.name}}</td>
+                <td>{{task.status}}</td>
+                <td>{{task.date_start}}</td>
+                <td>{{task.date_end}}</td>
+                <td>
+                    <span>
+                        <i class="far fa-edit" (click)="editTaskClickEvent($event, task.id)"></i>
+                    </span>
+                    <span style="padding-left: 10%"></span>
+                    <span>
+                        <i class="fas fa-trash-alt" (click)="deleteTaskClickEvent($event, task.id)"></i>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
