@@ -1,0 +1,31 @@
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit(taskForm.value)">
+
+        <div>
+          <label for="name">
+            Name
+          </label>
+          <input id="name" type="text" formControlName="name">
+        </div>
+      
+        <div>
+          <label for="status">
+            Status
+          </label>
+          <input id="status" type="text" formControlName="status">
+        </div>
+      
+        <div>
+            <label for="startdate">
+              Start Date
+            </label>
+            <input id="startdate" type="text" formControlName="date_start">
+        </div>
+        <div>
+            <label for="startdate">
+                  End Date
+            </label>
+            <input id="startdate" type="text" formControlName="date_end">
+        </div>
+        <button class="button" type="submit">Purchase</button>
+      
+      </form>
